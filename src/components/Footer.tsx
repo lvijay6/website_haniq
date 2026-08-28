@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Cpu, Mail, Phone, MapPin, Globe, Share2, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Globe, Share2, MessageCircle } from "lucide-react";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -9,15 +10,8 @@ export default function Footer() {
 
           {/* Brand & Mission Statement */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-cyanBrand to-purpleBrand p-[2px]">
-                <div className="w-full h-full bg-midnight rounded-[10px] flex items-center justify-center">
-                  <Cpu className="w-5 h-5 text-cyanBrand" />
-                </div>
-              </div>
-              <span className="font-bold text-xl tracking-tight text-white">
-                HaniQ<span className="text-cyanBrand">Labs</span>
-              </span>
+            <Link href="/" className="inline-block">
+              <Logo variant="dark-bg" />
             </Link>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
